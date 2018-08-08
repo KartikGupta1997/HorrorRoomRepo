@@ -33,4 +33,8 @@ public class CamController : MonoBehaviour {
             transform.position += transform.right*0.1f;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision detected");
+    }
 }
